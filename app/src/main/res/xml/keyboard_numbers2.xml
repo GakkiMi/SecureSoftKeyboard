@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="2%p"
+    android:keyWidth="22.5%p"
+    android:keyHeight="6%p"
+    android:verticalGap="1%p">
+    <Row>
+        <Key
+            android:codes="49"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+        <Key
+            android:codes="-35"
+            android:isRepeatable="true"
+            android:keyHeight="13%p" />
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+        <Key
+            android:codes="48"
+            android:keyLabel="0" />
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="-2"
+            android:keyHeight="5.5%p"
+            android:keyLabel="ABC" />
+        <Key
+            android:codes="90002"
+            android:keyWidth="47%p"
+            android:keyHeight="5.5%p"
+            android:keyLabel="安全键盘" />
+        <Key
+            android:codes="90003"
+            android:keyHeight="5.5%p"
+            android:keyLabel="登录" />
+    </Row>
+</Keyboard>
+-->
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:horizontalGap="2.5%p"
+    android:keyWidth="30%p"
+    android:keyHeight="4.6%p"
+    android:verticalGap="1%p">
+    <Row>
+        <Key
+            android:codes="49"
+            android:keyLabel="1" />
+        <Key
+            android:codes="50"
+            android:keyLabel="2" />
+        <Key
+            android:codes="51"
+            android:keyLabel="3" />
+
+    </Row>
+
+    <Row>
+        <Key
+            android:codes="52"
+            android:keyLabel="4" />
+        <Key
+            android:codes="53"
+            android:keyLabel="5" />
+        <Key
+            android:codes="54"
+            android:keyLabel="6" />
+    </Row>
+
+    <Row>
+
+        <Key
+            android:codes="55"
+            android:keyLabel="7" />
+        <Key
+            android:codes="56"
+            android:keyLabel="8" />
+        <Key
+            android:codes="57"
+            android:keyLabel="9" />
+
+    </Row>
+
+    <Row>
+
+        <Key android:codes="00000" />
+        <Key
+            android:codes="56"
+            android:keyLabel="0" />
+
+        <Key android:codes="-35"
+            android:isRepeatable="true"/>
+
+    </Row>
+
+
+    <Row android:horizontalGap="2%p">
+        <Key
+            android:codes="-2"
+            android:keyWidth="12%p"
+            android:keyHeight="4.4%p"
+            android:keyLabel="ABC" />
+
+        <Key
+            android:codes="90001"
+            android:keyWidth="12%p"
+            android:keyHeight="4.4%p"
+            android:keyLabel="#+=" />
+
+        <Key
+            android:codes="90002"
+            android:keyWidth="40%p"
+            android:keyHeight="4.4%p"
+            android:keyLabel="安全键盘" />
+        <Key
+            android:codes="90003"
+            android:keyWidth="26%p"
+            android:keyHeight="4.4%p"
+            android:keyLabel="登录" />
+    </Row>
+</Keyboard>

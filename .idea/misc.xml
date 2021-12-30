@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_blue_bg.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_number_selector_bg.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_selector_blue_bg.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_transparent_bg.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_word_del_layerlist.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_word_del_layerlist2.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_word_del_layerlist3.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_word_shift_layerlist.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_word_shift_layerlist_da.xml" value="0.2164102564102564" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/dialog_keyboard.xml" value="0.1" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/keyboardd_preview.xml" value="0.20364583333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

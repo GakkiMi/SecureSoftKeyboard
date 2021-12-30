@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_key"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/keyboard_view_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+
+        <FrameLayout
+            android:id="@+id/keyboard_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:background="#ECEEEF"
+            android:paddingBottom="10dp">
+
+            <com.example.securesoftkeyboard.safeKeyboard.CustomKeyboardView
+                android:id="@+id/keyboard_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ECEEEF"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:keyPreviewHeight="85dp"
+                android:keyPreviewOffset="36.5dp"
+                android:keyBackground="@drawable/keyboard_number_selector_bg"
+                android:keyPreviewLayout="@layout/keyboardd_preview"
+                android:keyTextColor="#39404C"
+                android:shadowRadius="0.0" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
