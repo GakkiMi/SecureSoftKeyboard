@@ -7,10 +7,11 @@
         </shape>
     </item>
     <item
-        android:bottom="13dp"
+        android:top="9dp"
+        android:bottom="9dp"
+        android:left="14dp"
+        android:right="14dp"
         android:drawable="@drawable/icon_keyboard_capital_default"
-        android:left="16dp"
-        android:right="16dp"
-        android:top="13dp" />
+        />
 </layer-list>
 

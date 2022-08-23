@@ -263,7 +263,7 @@ public class KeyboardDialog extends Dialog implements KeyboardView.OnKeyboardAct
         int start = mTargetEditText.get().getSelectionStart();
         if (primaryCode == Keyboard.KEYCODE_CANCEL) {
             hideKeyboard();
-        } else if (primaryCode == Keyboard.KEYCODE_DELETE/*-5*/) {//符号键盘和字母键盘删除按钮code
+        } else if (primaryCode == Keyboard.KEYCODE_DELETE) {//字母键盘删除按钮code
             if (editable != null && editable.length() > 0) {
                 if (start > 0) {
                     editable.delete(start - 1, start);
@@ -289,7 +289,7 @@ public class KeyboardDialog extends Dialog implements KeyboardView.OnKeyboardAct
                 mCurrentOrder = ORDER_LETTER;
             }
             onCurrentKeyboardChange();
-        } else if (primaryCode == 90002||primaryCode == 00000) {//安全键盘文字区域
+        } else if (primaryCode == 90002 || primaryCode == 00000) {//安全键盘文字区域
             return;
         } else if (primaryCode == 90003) {//登录按钮
             if (callBack != null) {
@@ -297,7 +297,13 @@ public class KeyboardDialog extends Dialog implements KeyboardView.OnKeyboardAct
             } else {
                 dismiss();
             }
-        } else if (primaryCode == -35) {//数字键盘回退键code
+        } else if (primaryCode == -35) {//字母键盘回退键code
+            if (editable != null && editable.length() > 0) {
+                if (start > 0) {
+                    editable.delete(start - 1, start);
+                }
+            }
+        } else if (primaryCode == -36) {//符号键盘回退键code
             if (editable != null && editable.length() > 0) {
                 if (start > 0) {
                     editable.delete(start - 1, start);
@@ -356,7 +362,7 @@ public class KeyboardDialog extends Dialog implements KeyboardView.OnKeyboardAct
     @Override
     public void onPress(int primaryCode) {
         int edgeFlags = getPressEdgeFlags(primaryCode);
-        keyboardView.changePreviewLayoutBg(keyboardView, edgeFlags);
+        keyboardView.changePreviewLayoutBg(keyboardView, keyboardView, edgeFlags);
         Log.i(TAG, "--------onPress-primaryCode:" + primaryCode + "==" + mCurrentOrder);
         switch (primaryCode) {
             case Keyboard.KEYCODE_CANCEL:
@@ -367,6 +373,9 @@ public class KeyboardDialog extends Dialog implements KeyboardView.OnKeyboardAct
             case 90002://安全键盘文字区域
             case 90003://登录按钮
             case -35://数字键盘回退键code
+                keyboardView.setPreviewEnabled(false);
+                break;
+            case -36://数字键盘回退键code
                 keyboardView.setPreviewEnabled(false);
                 break;
             default:

@@ -106,8 +106,8 @@
     </Row>
     <Row>
         <Key
-            android:horizontalGap="7.8%p"
             android:codes="46"
+            android:horizontalGap="7.8%p"
             android:keyWidth="11.1%p"
             android:keyLabel="." />
         <Key
@@ -131,12 +131,11 @@
             android:keyWidth="11.1%p"
             android:keyLabel="¥" />
         <Key
-            android:codes="-5"
+            android:codes="-36"
             android:isRepeatable="true"
             android:keyWidth="11.6%p" />
     </Row>
-    <Row android:rowEdgeFlags="bottom"
-        >
+    <Row android:rowEdgeFlags="bottom">
         <Key
             android:codes="-2"
             android:keyWidth="12%p"

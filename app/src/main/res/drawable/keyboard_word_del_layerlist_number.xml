@@ -7,10 +7,10 @@
         </shape>
     </item>
     <item
-        android:bottom="15dp"
         android:drawable="@drawable/icon_yingwen_fuhao_keyboard_del_default"
-        android:left="48dp"
-        android:right="48dp"
-        android:top="15dp" />
+        android:top="8dp"
+        android:bottom="8dp"
+        android:left="45dp"
+        android:right="45dp" />
 </layer-list>
 

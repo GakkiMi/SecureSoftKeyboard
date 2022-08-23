@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="65dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp">
+
+
+    <!--android:paddingTop="10dp" 意外的效果-->
+
+
+    <ImageView
+        android:id="@+id/iv_sub_car_eleme_style"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img_goods_sub"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_goods_buy_count_eleme_style"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        tools:text="11" />
+
+
+    <ImageView
+        android:id="@+id/iv_add_car_eleme_style"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img_goods_add"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_add_cannnot_car_eleme_style"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/img_goods_cannot_add" />
+
+
+</RelativeLayout>

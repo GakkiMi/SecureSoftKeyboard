@@ -13,4 +13,10 @@
         <attr name="keyboardBackground" />
         <attr name="keyPreview" />
     </declare-styleable>
+
+    <declare-styleable name="ElemeStyleCountModifyView">
+        <attr name="alignParentRight" format="boolean"/>
+    </declare-styleable>
+
+
 </resources>

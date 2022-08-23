@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <com.example.securesoftkeyboard.safeKeyboard.SecurityEditText
@@ -11,7 +13,7 @@
         fontPath="fonts/lantingzhongcuhei.ttf"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_margin="10dp"
+        android:layout_marginVertical="10dp"
         android:background="#00000000"
         android:gravity="center_vertical"
         android:hint="请输入密码"
@@ -22,9 +24,28 @@
         android:textColor="#ff000000"
         android:textSize="18sp"
         android:typeface="monospace"
+        android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints" />
 
+    <com.example.securesoftkeyboard.otherview.ElemeStyleCountModifyView
+        android:id="@+id/item_goods_info_eleme_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:alignParentRight="true"
+        tools:ignore="MissingConstraints" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.example.securesoftkeyboard.otherview.ElemeStyleCountModifyView
+        android:id="@+id/item_goods_info_eleme_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.example.securesoftkeyboard.otherview.ElemeStyleCountModifyView
+        android:id="@+id/item_goods_info_eleme_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+</LinearLayout>

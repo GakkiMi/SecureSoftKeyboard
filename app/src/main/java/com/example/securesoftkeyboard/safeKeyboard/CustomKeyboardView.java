@@ -61,16 +61,15 @@ public class CustomKeyboardView extends KeyboardView {
         try {
             for (Keyboard.Key key : keys) {
                 if (key.codes[0] == -5) {
-                    Drawable dr = (Drawable) context.getResources().getDrawable(R.drawable.keyboard_word_del_layerlist);
-                    dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
-                    dr.draw(canvas);
-                }
-                if (key.codes[0] == -36) {
-                    Drawable dr = (Drawable) context.getResources().getDrawable(R.drawable.keyboard_word_del_layerlist3);
+                    Drawable dr = (Drawable) context.getResources().getDrawable(R.drawable.keyboard_word_del_layerlist_number);
                     dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
                     dr.draw(canvas);
                 } else if (key.codes[0] == -35) {
-                    Drawable dr = (Drawable) context.getResources().getDrawable(R.drawable.keyboard_word_del_layerlist2);
+                    Drawable dr = (Drawable) context.getResources().getDrawable(R.drawable.keyboard_word_del_layerlist_word);
+                    dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
+                    dr.draw(canvas);
+                } else if (key.codes[0] == -36) {
+                    Drawable dr = (Drawable) context.getResources().getDrawable(R.drawable.keyboard_word_del_layerlist_symbol);
                     dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
                     dr.draw(canvas);
                 } else if (key.codes[0] == -1) {
@@ -183,15 +182,17 @@ public class CustomKeyboardView extends KeyboardView {
 
 
     /**
-     * 根据按压的未知改变
+     * 根据按压的位置改变
      *
      * @param object
      * @param edgeFlag
      */
-    public void changePreviewLayoutBg(Object object, int edgeFlag) {
+    public void changePreviewLayoutBg(CustomKeyboardView customKeyboardView,Object object, int edgeFlag) {
         try {
             Class clazz = Class.forName("android.inputmethodservice.KeyboardView");
-            @SuppressLint("SoonBlockedPrivateApi") Field field = clazz.getDeclaredField("mPreviewPopup");
+//            Class clazz = customKeyboardView.getClass().getSuperclass();
+
+           @SuppressLint("SoonBlockedPrivateApi") Field field = clazz.getDeclaredField("mPreviewPopup");
             field.setAccessible(true);
             @SuppressLint("SoonBlockedPrivateApi") Field field1 = clazz.getDeclaredField("mPreviewOffset");
             field1.setAccessible(true);
@@ -214,7 +215,7 @@ public class CustomKeyboardView extends KeyboardView {
 
 //            TextView mPreviewText = (TextView) LayoutInflater.from(context).inflate(R.layout.keyboardd_preview, null);不管用 无效方法
             mPreviewPopup.setContentView(mPreviewText);
-        } catch (Exception e) {
+        } catch (NoSuchFieldException | IllegalAccessException | ClassNotFoundException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }

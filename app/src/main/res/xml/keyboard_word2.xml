@@ -141,7 +141,7 @@
             android:codes="109"
             android:keyLabel="m" />
         <Key
-            android:codes="-5"
+            android:codes="-35"
             android:isRepeatable="true"
             android:keyWidth="12.7%p" />
     </Row>
