@@ -40,8 +40,8 @@ public class KeyboardDialog extends Dialog implements KeyboardView.OnKeyboardAct
     private SparseArray<Keyboard> mOrderToKeyboard;
     private ArrayList<String> mNumberPool;
 
-    private boolean isNumberRandom = true;
-    private boolean isWordRandom = true;
+    private boolean isNumberRandom = false;
+    private boolean isWordRandom = false;
     public static boolean isUpper = false;
 
     private WeakReference<SecurityEditText> mTargetEditText;

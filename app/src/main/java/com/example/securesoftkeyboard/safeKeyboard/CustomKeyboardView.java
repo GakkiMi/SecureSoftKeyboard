@@ -191,8 +191,8 @@ public class CustomKeyboardView extends KeyboardView {
         try {
             Class clazz = Class.forName("android.inputmethodservice.KeyboardView");
 //            Class clazz = customKeyboardView.getClass().getSuperclass();
-
-           @SuppressLint("SoonBlockedPrivateApi") Field field = clazz.getDeclaredField("mPreviewPopup");
+            Field fields[] = clazz.getFields();
+           @SuppressLint("SoonBlockedPrivateApi") Field field = clazz.getField("mPreviewPopup");
             field.setAccessible(true);
             @SuppressLint("SoonBlockedPrivateApi") Field field1 = clazz.getDeclaredField("mPreviewOffset");
             field1.setAccessible(true);

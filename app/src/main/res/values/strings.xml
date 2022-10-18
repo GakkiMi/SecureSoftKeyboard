@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SecureSoftKeyboard</string>
+    <string name="agreement_title">隐私政策授权</string>
+    <string name="agreement_msg">隐私政策说明…</string>
+    <string name="agreement_ok">同意</string>
+    <string name="agreement_cancel">拒绝</string>
+    <string name="device_token">DeviceToken</string>
 </resources>

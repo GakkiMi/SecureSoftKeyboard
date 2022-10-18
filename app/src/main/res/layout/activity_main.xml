@@ -48,4 +48,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_device_token"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:hint="deviceToken"
+        android:text=""
+        tools:ignore="MissingConstraints" />
+
 </LinearLayout>
