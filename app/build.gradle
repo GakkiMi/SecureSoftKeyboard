@@ -6,7 +6,10 @@ android {
     compileSdk 29
 
     defaultConfig {
+/*
         applicationId "com.cars.test"
+*/
+        applicationId "com.example.securesoftkeyboard"
         minSdk 21
         targetSdk 29
         versionCode 1

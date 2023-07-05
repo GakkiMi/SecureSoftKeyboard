@@ -7,15 +7,15 @@
     tools:context=".upush.helper.TestActivity">
 
     <TextView
+        android:id="@+id/tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_gravity="center"
         android:padding="16dp"
-        android:textSize="16sp"
         android:text="测试页面"
-        android:layout_centerInParent="true"
         android:textColor="@android:color/black"
-        android:id="@+id/tv" />
+        android:textSize="16sp" />
 
 
 </RelativeLayout>

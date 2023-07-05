@@ -127,5 +127,7 @@ public class MainActivity extends AppCompatActivity {
         token.setText(deviceToken);
     }
 
+    //第一次
+    //第二次
 
 }

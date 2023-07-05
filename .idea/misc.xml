@@ -16,10 +16,12 @@
         <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/drawable/keyboard_word_shift_layerlist_da.xml" value="0.2164102564102564" />
         <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/activity_test.xml" value="0.1890625" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/activity_wx_pay.xml" value="0.19882246376811594" />
         <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/dialog_keyboard.xml" value="0.1" />
         <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/keyboardd_preview.xml" value="0.20364583333333333" />
         <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/view_goods_count_modify_eleme_style.xml" value="0.75" />
         <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/layout/view_goods_count_modify_eleme_style2.xml" value="0.5" />
+        <entry key="..\:/GengProject/SecureSoftKeyboard/app/src/main/res/xml/network_security_config.xml" value="0.19882246376811594" />
       </map>
     </option>
   </component>
